@@ -1,0 +1,1215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>First Shares</title>
+<meta name="description" content="A stock market course for high schoolers investing small amounts: 14 lessons with quizzes, a ten-year decision game, a math gym, a final exam, a glossary and a plan builder.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<script>
+  /* Apply a saved Light or Dark theme before the page draws, so it doesn't flash. */
+  try { var t = localStorage.getItem("first-shares-v1:theme"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+</script>
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<noscript><p class="noscript">First Shares needs JavaScript for its lessons, quizzes and tools. Turn JavaScript on in your browser settings, then reload this page.</p></noscript>
+
+<div class="tape" aria-hidden="true">
+  <div class="tape-track" id="tape"></div>
+</div>
+
+<header class="mast">
+  <div class="wrap mast-top">
+    <span class="mast-top-label" id="theme-label">Theme</span>
+    <div class="tabs" id="theme-tabs" role="group" aria-labelledby="theme-label">
+      <button type="button" data-theme-set="system" aria-pressed="true">Auto</button>
+      <button type="button" data-theme-set="light" aria-pressed="false">Light</button>
+      <button type="button" data-theme-set="dark" aria-pressed="false">Dark</button>
+    </div>
+  </div>
+  <div class="wrap mast-inner">
+    <div>
+      <p class="eyebrow">A stock market course for high schoolers</p>
+      <h1>First Shares<span class="tick">▲</span></h1>
+      <p class="lede">Fourteen short lessons, a ten-year decision game, a math gym and a final exam. Written for someone starting with $10, $50 or $100 at a time.</p>
+    </div>
+    <div class="progress-card" aria-live="polite">
+      <div class="pc-top">
+        <span class="pc-label">Lessons passed</span>
+        <span class="pc-count num"><span id="pc-n">0</span><small> / 14</small></span>
+      </div>
+      <div class="segs" id="segs"></div>
+      <a class="btn btn-primary" id="continue" href="#m1">Start lesson 1</a>
+      <p class="pc-note">Pass a lesson by scoring 80% or more on its quiz. Progress is saved in this browser.</p>
+    </div>
+  </div>
+</header>
+
+<div class="wrap layout">
+  <nav class="rail" id="rail" aria-label="Course"></nav>
+
+  <main id="main">
+
+<!-- ========== LESSON 1 ========== -->
+<section class="view" id="m1">
+  <div class="view-head">
+    <p class="kicker">Lesson 1 of 14 · 8 min</p>
+    <h2>What a stock actually is</h2>
+    <p class="goal">By the end, you can explain what you own when you buy a share and the two ways it can make you money.</p>
+  </div>
+  <div class="prose">
+    <p>A <dfn>stock</dfn> is a piece of ownership in a company. Each piece is called a <dfn>share</dfn>. If a company is split into 1,000,000 shares and you own 10, you own 0.001% of it. That's tiny, but it's real: you're a part-owner, called a <dfn>shareholder</dfn>.</p>
+
+    <figure class="example">
+      <figcaption>Example · The lemonade stand that grew up</figcaption>
+      <div class="ex-body">
+        <p>Maya's lemonade stand is doing great, and she wants to open 9 more. That costs $9,000, which she doesn't have.</p>
+        <p>She splits the business into 1,000 shares. She keeps 500 and sells the other 500 to family and friends for $18 each. She raises 500 × $18 = <strong>$9,000</strong> without borrowing anything.</p>
+        <p>Her buyers now own half the business between them. If the stands earn more money, their shares become more valuable.</p>
+      </div>
+    </figure>
+
+    <p>Big companies do the same thing on a huge scale. The first time a company sells shares to the public is called an <dfn>IPO</dfn> (initial public offering). After that, its shares trade between investors on a <dfn>stock exchange</dfn>, like the New York Stock Exchange (NYSE) or the Nasdaq.</p>
+
+    <aside class="note note-tip">
+      <p class="note-label">Good to know</p>
+      <p>When you buy a share in an app, you are almost always buying it from another investor, not from the company. The company got its money at the IPO. Your purchase just changes who owns that share.</p>
+    </aside>
+
+    <p>Every public company has a <dfn>ticker symbol</dfn>, a short code for its stock. AAPL is Apple, KO is Coca-Cola, and NKE is Nike.</p>
+
+    <h3>Two ways a stock can make you money</h3>
+    <ol>
+      <li><strong>The price goes up.</strong> Buy a share at $40, sell it at $50, and you made $10. That profit is a <dfn>capital gain</dfn>. Until you sell, it's an <em>unrealized</em> gain. It only exists on paper and can disappear.</li>
+      <li><strong>Dividends.</strong> Some companies pay part of their profits to shareholders in cash, usually every three months. That payment is a <dfn>dividend</dfn>. Other companies keep all their profits to grow faster, so they pay none.</li>
+    </ol>
+
+    <h3>How you can lose money</h3>
+    <p>If the price falls below what you paid and you sell, that's a <dfn>capital loss</dfn>. If a company goes bankrupt, its stock can drop to $0. When you simply buy shares with your own money, the most you can lose is what you put in. Lesson 9 covers the ways people lose <em>more</em> than that, so you can avoid them.</p>
+
+    <h3>Where stocks fit</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Option</th><th>What it is</th><th>Risk</th><th>Long-run growth</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Savings account</strong></td><td>Cash at a bank. Insured by the FDIC up to $250,000.</td><td>Very low</td><td>Low, often close to inflation</td></tr>
+          <tr><td><strong>Bonds</strong></td><td>You lend money to a government or company, and it pays you interest.</td><td>Low to medium</td><td>Medium</td></tr>
+          <tr><td><strong>Stocks</strong></td><td>You own part of a company.</td><td>High in the short run</td><td>Highest of the three over long periods</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Over long periods, US stocks have grown much faster than savings or bonds, with big drops along the way. More growth in exchange for more bumps: that trade-off is the core idea of this whole course.</p>
+  </div>
+  <div class="keyterms" data-lesson="1"></div>
+  <div class="quiz" data-quiz="m1"></div>
+  <div class="lesson-nav" data-nav="m1"></div>
+</section>
+
+<!-- ========== LESSON 2 ========== -->
+<section class="view" id="m2" hidden>
+  <div class="view-head">
+    <p class="kicker">Lesson 2 of 14 · 9 min</p>
+    <h2>How the market moves</h2>
+    <p class="goal">By the end, you can explain why prices change, what market cap tells you, and what people mean by "the market."</p>
+  </div>
+  <div class="prose">
+    <p>A stock's price is the last price a buyer and a seller agreed on. If more people want to buy than sell at the current price, buyers have to offer more, and the price rises. If more people want to sell, sellers have to accept less, and it falls.</p>
+
+    <h3>Bid, ask and spread</h3>
+    <p>At any moment, the <dfn>bid</dfn> is the highest price a buyer is offering, and the <dfn>ask</dfn> is the lowest price a seller will accept. The gap between them is the <dfn>spread</dfn>. Popular stocks have spreads of a penny or two. Small, rarely traded stocks can have wide spreads, which quietly cost you money every time you buy or sell.</p>
+
+    <h3>What actually moves prices</h3>
+    <p>In the long run, a stock follows the company's profits. In the short run, it follows <strong>expectations</strong>.</p>
+    <ul>
+      <li><strong>Earnings reports.</strong> Every three months, public companies report their sales and profits in an <dfn>earnings report</dfn>. The price reacts to how the results compare with what investors expected.</li>
+      <li><strong>News.</strong> New products, lawsuits, a new CEO, a scandal.</li>
+      <li><strong>The economy and interest rates.</strong> When interest rates rise, safe savings and bonds pay more, so stocks look less attractive by comparison. Prices often dip.</li>
+      <li><strong>Mood.</strong> Fear and excitement can push prices far above or below what a business is worth, for a while.</li>
+    </ul>
+
+    <figure class="example">
+      <figcaption>Example · Record profits, falling price</figcaption>
+      <div class="ex-body">
+        <p>A company reports its best year ever, and its stock drops 8% the same day. How? Investors expected even bigger profits. The good news was already built into the price, so "good but not great" was a disappointment.</p>
+      </div>
+    </figure>
+
+    <h3>Market cap: how big is the company?</h3>
+    <p>The share price alone doesn't tell you how big or valuable a company is. For that, use <dfn>market capitalization</dfn>, usually called market cap.</p>
+    <div class="formula"><span class="fl">Formula</span><code>Market cap = share price × shares outstanding</code></div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Company</th><th class="r">Share price</th><th class="r">Shares</th><th class="r">Market cap</th></tr></thead>
+        <tbody>
+          <tr><td>Company A</td><td class="r">$500</td><td class="r">10 million</td><td class="r">$5 billion</td></tr>
+          <tr><td>Company B</td><td class="r">$50</td><td class="r">1 billion</td><td class="r">$50 billion</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>B's shares are cheaper, but B is worth ten times more. A $500 stock isn't "more expensive" than a $50 stock in any way that matters, and with fractional shares (Lesson 3) you can buy $5 of either. Investors often group companies by size: <strong>large-cap</strong> (over about $10 billion), <strong>mid-cap</strong> (about $2 to $10 billion) and <strong>small-cap</strong> (under about $2 billion). The cutoffs vary a little by source. Huge, well-established companies are often called <dfn>blue-chip</dfn> stocks.</p>
+
+    <h3>"The market" usually means an index</h3>
+    <p>An <dfn>index</dfn> tracks a group of stocks to show how part of the market is doing.</p>
+    <ul>
+      <li><strong>S&amp;P 500:</strong> about 500 large US companies, weighted by size. This is what most people mean by "the market."</li>
+      <li><strong>Dow Jones Industrial Average:</strong> 30 large companies. Old and famous, but small.</li>
+      <li><strong>Nasdaq Composite:</strong> thousands of stocks on the Nasdaq exchange, heavy in technology.</li>
+    </ul>
+    <p>You can't buy an index directly, but you can buy a fund that copies one. That's Lesson 5.</p>
+
+    <h3>Market moods</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Term</th><th>Meaning</th></tr></thead>
+        <tbody>
+          <tr><td><span class="up">▲</span> <strong>Bull market</strong></td><td>Prices rising over a long stretch.</td></tr>
+          <tr><td><span class="down">▼</span> <strong>Correction</strong></td><td>A fall of 10% or more from a recent high.</td></tr>
+          <tr><td><span class="down">▼</span> <strong>Bear market</strong></td><td>A fall of 20% or more from a recent high.</td></tr>
+          <tr><td><strong>Volatility</strong></td><td>How much and how fast prices swing up and down.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>US stock exchanges are open 9:30 a.m. to 4:00 p.m. Eastern Time, Monday to Friday, except market holidays. Some brokers allow trading outside those hours, but there are fewer buyers and sellers then, and spreads are wider.</p>
+
+    <h3>Stock splits</h3>
+    <p>In a <dfn>stock split</dfn>, a company turns each share into several. In a 2-for-1 split, your 1 share at $100 becomes 2 shares at $50. You own exactly the same value. Think of cutting a pizza into more slices: there's no extra pizza.</p>
+  </div>
+  <div class="keyterms" data-lesson="2"></div>
+  <div class="quiz" data-quiz="m2"></div>
+  <div class="lesson-nav" data-nav="m2"></div>
+</section>
+
+<!-- ========== LESSON 3 ========== -->
+<section class="view" id="m3" hidden>
+  <div class="view-head">
+    <p class="kicker">Lesson 3 of 14 · 10 min</p>
+    <h2>Quotes, orders and the math you'll use</h2>
+    <p class="goal">By the end, you can read a stock quote, pick the right order type, and calculate gains and losses.</p>
+  </div>
+  <div class="prose">
+    <h3>Read a quote</h3>
+    <p>Every broker shows a quote screen like this one. The company is made up for practice. Tap any number to see what it means.</p>
+  </div>
+
+  <div class="quote" id="quote">
+    <div class="quote-top">
+      <div>
+        <p class="q-name">Trailhead Outfitters</p>
+        <p class="q-tick">TRLH · NASDAQ · PRACTICE QUOTE</p>
+      </div>
+      <button class="qf qf-price" data-f="price" type="button"><span class="q-price">48.20</span><span class="q-chg">▲ +0.86 (+1.82%)</span></button>
+    </div>
+    <div class="quote-grid">
+      <button class="qf" data-f="prev" type="button"><span>Prev close</span><b>47.34</b></button>
+      <button class="qf" data-f="open" type="button"><span>Open</span><b>47.50</b></button>
+      <button class="qf" data-f="day" type="button"><span>Day range</span><b>47.21 – 48.55</b></button>
+      <button class="qf" data-f="wk" type="button"><span>52-wk range</span><b>31.10 – 52.75</b></button>
+      <button class="qf" data-f="vol" type="button"><span>Volume</span><b>3.2M</b></button>
+      <button class="qf" data-f="avg" type="button"><span>Avg volume</span><b>2.7M</b></button>
+      <button class="qf" data-f="cap" type="button"><span>Market cap</span><b>6.1B</b></button>
+      <button class="qf" data-f="pe" type="button"><span>P/E (TTM)</span><b>21.4</b></button>
+      <button class="qf" data-f="eps" type="button"><span>EPS (TTM)</span><b>2.25</b></button>
+      <button class="qf" data-f="yld" type="button"><span>Div yield</span><b>1.66%</b></button>
+    </div>
+    <div class="quote-explain" id="quote-explain" aria-live="polite">Tap any number on the quote to see what it means.</div>
+  </div>
+
+  <div class="prose">
+    <h3>Your broker</h3>
+    <p>To buy stock, you need a <dfn>brokerage account</dfn>: an account at a company that places trades for you. Most large US brokers now charge $0 commission to trade US stocks and ETFs online. Under 18? Lesson 8 covers the accounts you can use.</p>
+
+    <h3>Order types</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Order</th><th>What it tells the broker</th><th>Use it when</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Market order</strong></td><td>"Buy (or sell) right now at the best price available."</td><td>Getting the trade done now matters most, and the stock trades a lot.</td></tr>
+          <tr><td><strong>Limit order</strong></td><td>"Buy only at $X or lower," or "Sell only at $X or higher."</td><td>The price matters most. It might never fill.</td></tr>
+          <tr><td><strong>Stop-loss order</strong></td><td>"If the price falls to $X, sell at market."</td><td>You want an automatic exit. In a fast drop, it can sell well below $X.</td></tr>
+          <tr><td><strong>Stop-limit order</strong></td><td>"If the price hits $X, place a limit order at $Y."</td><td>You want a trigger and a price floor, and accept it might not sell.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>A <strong>day order</strong> expires when the market closes. A <strong>good-'til-canceled</strong> (GTC) order stays open until it fills or you cancel it. Most brokers cancel GTC orders automatically after a few months.</p>
+
+    <aside class="note note-tip">
+      <p class="note-label">Beginner default</p>
+      <p>For a small purchase of a popular stock or ETF during market hours, a market order is fine. For anything thinly traded, or when the market is closed, use a limit order so you don't get a surprise price.</p>
+    </aside>
+
+    <h3>Fractional shares</h3>
+    <p>Many brokers let you buy part of a share by typing in a dollar amount. That's a <dfn>fractional share</dfn>. $25 of a $400 stock buys 25 ÷ 400 = 0.0625 shares. You get the same percent gains and losses as a whole share, plus a matching slice of any dividend.</p>
+
+    <h3>The math you'll use constantly</h3>
+    <div class="formula"><span class="fl">Percent change</span><code>(new price − old price) ÷ old price × 100</code></div>
+    <p>A stock goes from $40 to $46: (46 − 40) ÷ 40 × 100 = <strong class="up">+15%</strong>.</p>
+    <div class="formula"><span class="fl">Profit or loss</span><code>(sell price − buy price) × number of shares</code></div>
+    <p>Gains and losses aren't symmetric. If a stock falls 50%, from $100 to $50, it has to rise 100% to get back to $100. Big losses are very hard to climb out of, which is one reason to avoid risky, concentrated bets.</p>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>If it falls</th><th class="r">It must then rise</th></tr></thead>
+        <tbody>
+          <tr><td class="down">−10%</td><td class="r">+11.1%</td></tr>
+          <tr><td class="down">−20%</td><td class="r">+25%</td></tr>
+          <tr><td class="down">−25%</td><td class="r">+33.3%</td></tr>
+          <tr><td class="down">−50%</td><td class="r">+100%</td></tr>
+          <tr><td class="down">−75%</td><td class="r">+300%</td></tr>
+          <tr><td class="down">−90%</td><td class="r">+900%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="formula"><span class="fl">Gain needed to recover</span><code>drop % ÷ (100 − drop %) × 100</code></div>
+    <p>One last detail: the cash and the shares officially swap one business day after your trade. That's called <dfn>settlement</dfn>, or T+1.</p>
+  </div>
+  <div class="keyterms" data-lesson="3"></div>
+  <div class="quiz" data-quiz="m3"></div>
+  <div class="lesson-nav" data-nav="m3"></div>
+</section>
+
+<!-- ========== LESSON 4 ========== -->
+<section class="view" id="m4" hidden>
+  <div class="view-head">
+    <p class="kicker">Lesson 4 of 14 · 12 min</p>
+    <h2>Sizing up a company</h2>
+    <p class="goal">By the end, you can use a handful of numbers and a checklist to judge whether a business is strong and whether its stock price is reasonable.</p>
+  </div>
+  <div class="prose">
+    <p>Buying a stock means buying part of a business. So the first question isn't "Will the price go up?" It's "Is this a good business, and am I paying a fair price for it?" Studying a company's actual business and finances is called <dfn>fundamental analysis</dfn>.</p>
+
+    <h3>The income statement in one table</h3>
+    <p>Meet Crust &amp; Co., a made-up pizza chain.</p>
+    <div class="tbl-wrap">
+      <table>
+        <tbody>
+          <tr><td><strong>Revenue</strong> (all money from sales)</td><td class="r">$2,000 million</td></tr>
+          <tr><td>Costs: ingredients, wages, rent, ads, taxes</td><td class="r down">−$1,800 million</td></tr>
+          <tr><td><strong>Net income</strong> (profit)</td><td class="r"><strong>$200 million</strong></td></tr>
+          <tr><td>Shares outstanding</td><td class="r">100 million</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <ul>
+      <li><dfn>Revenue</dfn> is the "top line": everything the company sells.</li>
+      <li><dfn>Net income</dfn> is the "bottom line": what's left after every cost and tax.</li>
+    </ul>
+    <div class="formula"><span class="fl">Profit margin</span><code>net income ÷ revenue = 200 ÷ 2,000 = 10%</code></div>
+    <p>Crust &amp; Co. keeps 10 cents of every dollar of pizza it sells. That's its <dfn>profit margin</dfn>.</p>
+    <div class="formula"><span class="fl">Earnings per share (EPS)</span><code>net income ÷ shares = $200M ÷ 100M = $2.00</code></div>
+
+    <h3>The P/E ratio: is the price reasonable?</h3>
+    <div class="formula"><span class="fl">Price-to-earnings</span><code>P/E = share price ÷ EPS</code></div>
+    <p>If Crust &amp; Co. stock costs $30, its <dfn>P/E ratio</dfn> is 30 ÷ 2 = 15. You're paying $15 for each $1 of yearly profit.</p>
+    <ul>
+      <li><strong>High P/E</strong> (say, 40 or more): investors expect fast growth. That can be justified, or it can mean the stock is overhyped.</li>
+      <li><strong>Low P/E</strong> (say, under 12): investors expect slow growth or trouble. It can be a bargain, or a trap.</li>
+      <li>Compare P/Es only with similar companies in the same industry, and with the company's own history. A software company and a grocery chain normally have very different P/Es.</li>
+      <li>A company that loses money has no meaningful P/E, because its EPS is negative.</li>
+    </ul>
+
+    <h3>Dividend yield and payout ratio</h3>
+    <div class="formula"><span class="fl">Dividend yield</span><code>yearly dividend per share ÷ share price × 100</code></div>
+    <p>Crust &amp; Co. pays $0.60 per share each year. At $30 a share, its <dfn>dividend yield</dfn> is 0.60 ÷ 30 = 2%. Own $1,000 of the stock and you'd get about $20 a year.</p>
+    <p>Its <dfn>payout ratio</dfn> is dividend ÷ EPS = 0.60 ÷ 2.00 = 30%. It pays out 30% of profits and keeps 70% to grow.</p>
+    <aside class="note note-warn">
+      <p class="note-label">Watch out</p>
+      <p>A very high dividend yield, like 8% or more, is often a warning sign. Usually the price has crashed because investors expect the dividend to be cut.</p>
+    </aside>
+
+    <h3>The balance sheet: what it owns and owes</h3>
+    <div class="formula"><span class="fl">Balance sheet</span><code>assets − liabilities = shareholders' equity</code></div>
+    <p>It works like a person's finances: what you own minus what you owe is what you're worth. A company with heavy debt gets into trouble fast when sales drop, because the loan payments don't stop.</p>
+
+    <h3>The moat</h3>
+    <p>Great businesses have something that keeps competitors away, like the moat around a castle.</p>
+    <div class="cards">
+      <div class="card"><h4>Brand</h4><p>People happily pay more for the name.</p></div>
+      <div class="card"><h4>Network effects</h4><p>The product gets better as more people use it, like messaging apps and marketplaces.</p></div>
+      <div class="card"><h4>Switching costs</h4><p>Leaving is a pain: your files, your settings, your habits.</p></div>
+      <div class="card"><h4>Cost advantage</h4><p>So big or efficient that it can charge less than anyone else.</p></div>
+    </div>
+
+    <h3>Where to find the facts</h3>
+    <ul>
+      <li>The company's <strong>investor relations</strong> website: earnings reports and presentations.</li>
+      <li>SEC filings, free on EDGAR at sec.gov. The <dfn>10-K</dfn> is the annual report and the 10-Q is the quarterly one. The "Business" and "Risk Factors" sections of a 10-K are very readable.</li>
+      <li>Your broker's stock page, which collects the key numbers in one place.</li>
+    </ul>
+
+    <aside class="note note-warn">
+      <p class="note-label">Watch out</p>
+      <p>A great company can still be a bad investment if you pay too much for it. Everyone already knows the famous companies are great, and that's usually built into the price.</p>
+    </aside>
+
+    <h3>The six-question checklist</h3>
+    <ul class="checklist">
+      <li>Can I explain how this company makes money in two sentences?</li>
+      <li>Has revenue grown over the last three to five years?</li>
+      <li>Is it profitable, with steady or rising margins?</li>
+      <li>Is its debt manageable?</li>
+      <li>Does it have a moat?</li>
+      <li>Is the price reasonable compared with its earnings and its competitors?</li>
+    </ul>
+
+    <p>Some people instead study price charts and patterns. That's called <dfn>technical analysis</dfn>, and it's all over social media. For long-term beginners, there's little evidence that it helps, and it pushes you to trade too often.</p>
+  </div>
+  <div class="keyterms" data-lesson="4"></div>
+  <div class="quiz" data-quiz="m4"></div>
+  <div class="lesson-nav" data-nav="m4"></div>
+</section>
+
+<!-- ========== LESSON 5 ========== -->
+<section class="view" id="m5" hidden>
+  <div class="view-head">
+    <p class="kicker">Lesson 5 of 14 · 9 min</p>
+    <h2>Funds: hundreds of companies in one buy</h2>
+    <p class="goal">By the end, you can explain index funds and ETFs, compare them by fees, and say why most investors build on them.</p>
+  </div>
+  <div class="prose">
+    <p>Picking individual winners is hard. A <dfn>fund</dfn> pools money from many investors and buys lots of stocks or bonds at once. One purchase gets you a slice of all of them.</p>
+
+    <h3>Three words you'll see everywhere</h3>
+    <div class="cards">
+      <div class="card"><h4>Mutual fund</h4><p>Bought and sold once a day, at a price set after the market closes. Some have minimum investments.</p></div>
+      <div class="card"><h4>ETF</h4><p>An exchange-traded fund. It has a ticker and trades all day like a stock. Many brokers sell fractional ETF shares.</p></div>
+      <div class="card"><h4>Index fund</h4><p>A mutual fund or ETF that copies an index, like the S&amp;P 500, instead of paying managers to pick stocks.</p></div>
+    </div>
+    <figure class="example">
+      <figcaption>Example · $10 of everything</figcaption>
+      <div class="ex-body">
+        <p>Put $10 into an S&amp;P 500 index fund, and you own a tiny slice of about 500 large companies. If one of them goes bankrupt, it's a small fraction of your money, and the index replaces it with another company.</p>
+      </div>
+    </figure>
+
+    <h3>Active vs. passive</h3>
+    <p><dfn>Active investing</dfn> means managers pick stocks, trying to beat the market, and charge higher fees for it. <dfn>Passive investing</dfn> means buying an index fund that just copies the market, for a very low fee.</p>
+    <p>Here's the surprising part. Most professional stock pickers don't beat the index over time. S&amp;P's long-running SPIVA reports find that close to 9 out of 10 actively managed US large-company funds have trailed the S&amp;P 500 over 15-year periods. Fees are a big reason why.</p>
+
+    <h3>The expense ratio</h3>
+    <p>Every fund charges a yearly fee called the <dfn>expense ratio</dfn>, a percent of the money you have in it. It's taken out automatically, so you never see a bill.</p>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Expense ratio</th><th class="r">Yearly fee on $10,000</th><th class="r">$10,000 after 40 years at 7%</th></tr></thead>
+        <tbody>
+          <tr><td>0.03%</td><td class="r">$3</td><td class="r">about $148,000</td></tr>
+          <tr><td>0.20%</td><td class="r">$20</td><td class="r">about $139,000</td></tr>
+          <tr><td>1.00%</td><td class="r">$100</td><td class="r down">about $103,000</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>A 1% fee sounds tiny. Over 40 years, it costs about $45,000 here, because money lost to fees also stops compounding.</p>
+
+    <h3>Common types of funds</h3>
+    <ul>
+      <li><strong>Total US stock market:</strong> nearly every public US company.</li>
+      <li><strong>S&amp;P 500:</strong> about 500 large US companies.</li>
+      <li><strong>International:</strong> companies outside the US.</li>
+      <li><strong>Total world:</strong> US and international in one fund.</li>
+      <li><strong>Bond funds:</strong> many bonds. Steadier, with lower growth.</li>
+      <li><strong>Target-date funds:</strong> a mix that gets more conservative as a target year, like 2070, gets closer. Common in retirement accounts.</li>
+      <li><strong>Sector and theme funds:</strong> one industry or trend, like tech or clean energy. Less diversified, and often launched after the theme is already hot.</li>
+    </ul>
+    <p>Before you buy any fund, check four things on its page: which index it tracks, its expense ratio, how many companies it holds, and its top 10 holdings. Because the S&amp;P 500 is weighted by size, its biggest companies make up a large share of it. Even a broad index isn't perfectly balanced.</p>
+
+    <aside class="note note-warn">
+      <p class="note-label">Watch out</p>
+      <p>Leveraged and inverse ETFs, often labeled 2x, 3x, "Ultra" or "Bear," use borrowing to multiply an index's <em>daily</em> move. They reset every day, so over weeks and months they can lose money even when the index ends up flat. They're built for short-term traders, not for you.</p>
+    </aside>
+  </div>
+  <div class="keyterms" data-lesson="5"></div>
+  <div class="quiz" data-quiz="m5"></div>
+  <div class="lesson-nav" data-nav="m5"></div>
+</section>
+
+<!-- ========== LESSON 6 ========== -->
+<section class="view" id="m6" hidden>
+  <div class="view-head">
+    <p class="kicker">Lesson 6 of 14 · 10 min</p>
+    <h2>Risk and your brain</h2>
+    <p class="goal">By the end, you know how far stocks can fall, how diversification and time reduce risk, and which mental traps cause bad decisions.</p>
+  </div>
+  <div class="prose">
+    <p>Risk in investing means two things: how much prices swing, and the chance you lose money you can't afford to lose.</p>
+
+    <h3>Big drops are normal</h3>
+    <p>These are real declines of the S&amp;P 500, from its peak to its lowest point.</p>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Event</th><th class="r">Drop</th><th class="r">Back to old high (from the peak)</th></tr></thead>
+        <tbody>
+          <tr><td>Dot-com crash, 2000–2002</td><td class="r down">about −49%</td><td class="r">about 7 years</td></tr>
+          <tr><td>Financial crisis, 2007–2009</td><td class="r down">about −57%</td><td class="r">about 5½ years</td></tr>
+          <tr><td>COVID crash, Feb–Mar 2020</td><td class="r down">about −34%</td><td class="r">about 6 months</td></tr>
+          <tr><td>Inflation and rate hikes, 2022</td><td class="r down">about −25%</td><td class="r">about 2 years</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Prices only, not counting dividends. Each time, the market eventually reached new highs. But look at the range: sometimes months, sometimes years. That's why one rule matters so much:</p>
+    <aside class="note note-tip">
+      <p class="note-label">Rule</p>
+      <p>Money you'll need within about 5 years, for a car, college costs or a trip, belongs in savings, not stocks. How long until you need the money is your <dfn>time horizon</dfn>.</p>
+    </aside>
+
+    <h3>Diversification</h3>
+    <p>Single companies can go to zero. Enron (2001), Lehman Brothers (2008) and Blockbuster (2010) were all big, famous companies that went bankrupt. <dfn>Diversification</dfn> means spreading your money across many investments so one disaster can't sink you.</p>
+    <ul>
+      <li><strong>Company-specific risk</strong> hits one business: a scandal, a failed product. Diversification can mostly remove it.</li>
+      <li><strong>Market risk</strong> hits nearly everything at once, like a recession. Diversification can't remove it. Time is how you handle it.</li>
+    </ul>
+
+    <h3>Dollar-cost averaging</h3>
+    <p><dfn>Dollar-cost averaging</dfn> means investing the same amount on a schedule, like $50 every month, whatever the price. You automatically buy more shares when prices are low and fewer when they're high.</p>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Month</th><th class="r">Price</th><th class="r">You invest</th><th class="r">Shares bought</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td class="r">$10</td><td class="r">$50</td><td class="r">5.00</td></tr>
+          <tr><td>2</td><td class="r">$8</td><td class="r">$50</td><td class="r">6.25</td></tr>
+          <tr><td>3</td><td class="r">$5</td><td class="r">$50</td><td class="r">10.00</td></tr>
+          <tr><td>4</td><td class="r">$8</td><td class="r">$50</td><td class="r">6.25</td></tr>
+          <tr><td>5</td><td class="r">$10</td><td class="r">$50</td><td class="r">5.00</td></tr>
+          <tr><td><strong>Total</strong></td><td class="r">avg $8.20</td><td class="r"><strong>$250</strong></td><td class="r"><strong>32.50</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Your average cost is $250 ÷ 32.5 = <strong>$7.69 a share</strong>, below the $8.20 average price. The price ended right where it started, at $10, but your 32.5 shares are worth $325, a <span class="up">30% gain</span>. Dollar-cost averaging also removes the stress of guessing the "right time" to buy.</p>
+
+    <h3>Your brain is the biggest risk</h3>
+    <div class="cards">
+      <div class="card"><h4>FOMO</h4><p>Buying because a stock already shot up and everyone's talking about it.</p></div>
+      <div class="card"><h4>Panic selling</h4><p>Selling after a big drop, locking in the loss right before a possible rebound.</p></div>
+      <div class="card"><h4>Loss aversion</h4><p>Losses feel about twice as bad as equal gains feel good, so we make odd choices to avoid them.</p></div>
+      <div class="card"><h4>Confirmation bias</h4><p>Only reading opinions that agree with what you already believe.</p></div>
+      <div class="card"><h4>Overconfidence</h4><p>A few lucky wins make you feel like a genius, so you bet bigger.</p></div>
+      <div class="card"><h4>Recency bias</h4><p>Assuming whatever just happened will keep happening.</p></div>
+    </div>
+    <p>Time in the market beats timing the market. Some of the market's best days have come right after its worst ones, so people who panic-sell often miss the rebound.</p>
+    <aside class="note note-tip">
+      <p class="note-label">Write this rule down</p>
+      <p>"I won't sell an investment just because its price dropped. I'll sell only if the reason I bought it is no longer true, or I need the money for a planned goal."</p>
+    </aside>
+  </div>
+  <div class="keyterms" data-lesson="6"></div>
+  <div class="quiz" data-quiz="m6"></div>
+  <div class="lesson-nav" data-nav="m6"></div>
+</section>
+
+<!-- ========== LESSON 7 ========== -->
+<section class="view" id="m7" hidden>
+  <div class="view-head">
+    <p class="kicker">Lesson 7 of 14 · 8 min</p>
+    <h2>Compound growth: time is your edge</h2>
+    <p class="goal">By the end, you'll see why starting at 16 matters more than starting with a lot of money, and you can run your own numbers.</p>
+  </div>
+  <div class="prose">
+    <p><dfn>Compound growth</dfn> means your gains start earning gains of their own. Simple interest pays you only on what you put in. Compounding pays you on everything, including past growth.</p>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>$1,000 growing 7% a year</th><th class="r">Value</th></tr></thead>
+        <tbody>
+          <tr><td>After 1 year</td><td class="r">$1,070</td></tr>
+          <tr><td>After 2 years</td><td class="r">$1,144.90</td></tr>
+          <tr><td>After 10 years</td><td class="r">$1,967</td></tr>
+          <tr><td>After 30 years</td><td class="r">$7,612</td></tr>
+          <tr><td>After 50 years</td><td class="r"><strong>$29,457</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="formula"><span class="fl">Rule of 72</span><code>72 ÷ yearly growth rate ≈ years to double</code></div>
+    <p>At 7%, money doubles about every 10 years. At 10%, about every 7. In a savings account paying 2%, it takes about 36.</p>
+
+    <h3>Alex and Jordan</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th></th><th>Invests</th><th class="r">Total put in</th><th class="r">Value at 65</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Alex</strong></td><td>$50 a month from 16 to 26, then stops forever</td><td class="r">$6,000</td><td class="r"><strong class="up">about $131,600</strong></td></tr>
+          <tr><td><strong>Jordan</strong></td><td>$50 a month from 26 all the way to 65</td><td class="r">$23,400</td><td class="r">about $121,800</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Alex put in about a quarter as much money and still ends up ahead. Ten extra years of compounding at the start beat 39 years of deposits. Your biggest advantage right now isn't money. It's time.</p>
+    <p class="hint">These examples assume 7% average yearly growth, a common estimate for long-run stock returns after <dfn>inflation</dfn>, so the results are roughly in today's dollars. Before inflation, US stocks have averaged about 10% a year over the past century, but single years have ranged from big gains to losses of 30% or more. Nothing here is guaranteed.</p>
+
+    <h3>Run your own numbers</h3>
+  </div>
+
+  <div class="calc" id="calc">
+    <div class="calc-inputs">
+      <div class="field"><label for="c-start">Starting amount</label><div class="money"><input type="number" id="c-start" min="0" step="10" value="100"></div></div>
+      <div class="field"><label for="c-monthly">Each month</label><div class="money"><input type="number" id="c-monthly" min="0" step="5" value="25"></div></div>
+      <div class="field"><label for="c-years">Years <span class="val" id="c-years-v">49</span></label><input type="range" id="c-years" min="1" max="60" value="49"></div>
+      <div class="field"><label for="c-rate">Yearly growth <span class="val" id="c-rate-v">7%</span></label><input type="range" id="c-rate" min="0" max="12" step="0.5" value="7"></div>
+    </div>
+    <div class="calc-out">
+      <div class="stat"><div class="sl"><span class="swatch sw1"></span>Ending value</div><div class="sv" id="c-final">$0</div></div>
+      <div class="stat"><div class="sl"><span class="swatch sw2"></span>You put in</div><div class="sv" id="c-in">$0</div></div>
+      <div class="stat"><div class="sl">Growth earned</div><div class="sv" id="c-growth">$0</div></div>
+    </div>
+    <p class="calc-sum" id="c-sum"></p>
+    <div class="legend"><span><i style="background:var(--series-1)"></i>Account value</span><span><i style="background:var(--series-2)"></i>Money you put in</span></div>
+    <div class="chart-box" id="c-chart-box">
+      <svg class="chart" id="c-chart" role="img" aria-label="Account value compared with money put in, year by year"></svg>
+      <div class="tip" id="c-tip" hidden></div>
+    </div>
+    <details class="tv"><summary>Show as a table</summary><div class="tbl-wrap" style="margin-top:10px"><table id="c-table"></table></div></details>
+  </div>
+
+  <div class="prose">
+    <h3>Two habits that keep compounding going</h3>
+    <ul>
+      <li><strong>Reinvest dividends.</strong> Turn on <dfn>dividend reinvestment</dfn> (often called DRIP) at your broker, so dividends automatically buy more shares.</li>
+      <li><strong>Don't interrupt it.</strong> Every time you pull money out or sell in a panic, you reset part of the snowball.</li>
+    </ul>
+    <p>Inflation is why this matters. Prices rise over time (the Federal Reserve aims for about 2% a year), so cash sitting still slowly buys less. Your <dfn>real return</dfn> is what you earn after inflation. Investing is how your money keeps up and gets ahead.</p>
+  </div>
+  <div class="keyterms" data-lesson="7"></div>
+  <div class="quiz" data-quiz="m7"></div>
+  <div class="lesson-nav" data-nav="m7"></div>
+</section>
+
+<!-- ========== LESSON 8 ========== -->
+<section class="view" id="m8" hidden>
+  <div class="view-head">
+    <p class="kicker">Lesson 8 of 14 · 11 min</p>
+    <h2>Starting with limited money</h2>
+    <p class="goal">By the end, you know which accounts a teen can use, what to do before investing, and a simple plan for $10 to $100 a month.</p>
+  </div>
+  <div class="prose">
+    <aside class="note">
+      <p class="note-label">Where this applies</p>
+      <p>The account rules below are for the US. In other countries, account types and age limits are different. Look up your local options with a parent or guardian.</p>
+    </aside>
+
+    <h3>Before you invest a single dollar</h3>
+    <ol>
+      <li>Keep some cash in savings for surprises, like a phone repair or a school trip. A high-yield savings account at an FDIC-insured bank pays more than a regular one.</li>
+      <li>Only invest money you won't need for at least 5 years.</li>
+      <li>Never invest borrowed money.</li>
+      <li>Never invest because someone online promised fast returns.</li>
+    </ol>
+
+    <h3>Accounts you can use under 18</h3>
+    <p>In the US, you generally need to be 18 to open a regular brokerage account in your own name. Until then, you have three main options.</p>
+    <div class="cards">
+      <div class="card"><h4>Custodial account (UTMA/UGMA)</h4><p>A parent or guardian opens and manages it for you. The money legally belongs to you, and you take control at 18 or 21, depending on your state. Money put in is a gift and can't be taken back.</p></div>
+      <div class="card"><h4>Youth or teen account</h4><p>Some brokers offer accounts for ages 13 to 17 that you can run yourself while a parent watches over it. Fidelity's Youth Account is one example. Compare what's available with a parent.</p></div>
+      <div class="card"><h4>Custodial Roth IRA</h4><p>If you earn money from work, you can contribute up to what you earned that year, up to the yearly IRA limit the IRS sets. The money grows tax-free, and withdrawals in retirement are tax-free.</p></div>
+    </div>
+    <p>Earned income can come from a regular job, but also babysitting, mowing lawns or tutoring, as long as you keep records. A <dfn>Roth IRA</dfn> is a big deal for teens: you probably pay little or no income tax now, and you'd never pay tax on decades of growth. You can withdraw your contributions (not the growth) at any time, but the account works best left alone.</p>
+
+    <h3>Finding money to invest</h3>
+    <p>Part-time jobs, allowance, birthday money, selling things you've made. Even $10 a week is $520 a year. At this stage, small amounts matter mostly because they build the habit early, and the habit is what compounds.</p>
+
+    <h3>A starter plan for $10 to $100 a month</h3>
+    <ol>
+      <li><strong>Core, 80–100%:</strong> one broad, low-fee index fund or ETF, such as a total US market, S&amp;P 500 or total world fund.</li>
+      <li><strong>Learning slice, 0–20%:</strong> individual companies you've researched with the Lesson 4 checklist. Treat any losses here as tuition.</li>
+      <li><strong>Automate it:</strong> set up an automatic monthly investment so you don't have to decide each time.</li>
+      <li><strong>Buy fractional shares</strong> so every dollar gets invested.</li>
+      <li><strong>Turn on dividend reinvestment.</strong></li>
+      <li><strong>Keep a journal:</strong> what you bought, why, and what would make you sell.</li>
+      <li><strong>Check monthly, not hourly.</strong></li>
+    </ol>
+    <figure class="example">
+      <figcaption>Example · Sam's $200 a month</figcaption>
+      <div class="ex-body">
+        <p>Sam earns $200 a month from a weekend job. Each month: $50 goes to savings, $40 to an S&amp;P 500 index fund, $10 to one company Sam researched, and the other $100 gets spent guilt-free.</p>
+      </div>
+    </figure>
+
+    <h3>Practice with fake money first</h3>
+    <p><dfn>Paper trading</dfn> means making pretend trades with fake money to learn how orders and price swings feel. Many brokers and school stock market games offer simulators. Try one for a month, and make your mistakes there for free.</p>
+    <p>One caution: fake money makes it easy to take wild risks you'd never take with real money. Practice the way you actually plan to invest.</p>
+
+    <h3>Taxes in one minute (US)</h3>
+    <ul>
+      <li>In a regular account, you owe tax on a gain only when you sell. Until then it's unrealized.</li>
+      <li>Held one year or less: a <dfn>short-term capital gain</dfn>, taxed like regular income. Held more than one year: a <dfn>long-term capital gain</dfn>, usually taxed at a lower rate.</li>
+      <li>Dividends are usually taxed in the year you get them, even if they're reinvested.</li>
+      <li>Your broker sends a Form 1099 each year. A parent can help you file.</li>
+      <li>A child's investment income above a set amount can be taxed at the parent's rate. This is called the "kiddie tax."</li>
+      <li>Inside a Roth IRA, none of this applies while the money stays in.</li>
+    </ul>
+  </div>
+  <div class="keyterms" data-lesson="8"></div>
+  <div class="quiz" data-quiz="m8"></div>
+  <div class="lesson-nav" data-nav="m8"></div>
+</section>
+
+<!-- ========== LESSON 9 ========== -->
+<section class="view" id="m9" hidden>
+  <div class="view-head">
+    <p class="kicker">Lesson 9 of 14 · 9 min</p>
+    <h2>Traps, scams and things to skip for now</h2>
+    <p class="goal">By the end, you can spot the products and pitches that cause beginners their biggest losses.</p>
+  </div>
+  <div class="prose">
+    <h3>Skip these for now</h3>
+    <div class="cards">
+      <div class="card"><span class="tag">Most lose money</span><h4>Day trading</h4><p>Buying and selling within the same day to catch small moves. One large study of Brazilian day traders found that 97% of those who kept at it for over 300 days lost money. You're up against professionals and computers.</p></div>
+      <div class="card"><span class="tag">Can go to zero fast</span><h4>Options</h4><p>Contracts to buy or sell a stock at a set price by a set date. Many expire worthless. Generally not allowed in custodial accounts anyway.</p></div>
+      <div class="card"><span class="tag">Lose more than you put in</span><h4>Margin</h4><p>Borrowing from your broker to buy more. Gains and losses both get bigger. If your account falls too far, the broker can sell your stocks for you in a <dfn>margin call</dfn>.</p></div>
+      <div class="card"><span class="tag">No ceiling on losses</span><h4>Short selling</h4><p>Borrowing shares and selling them, betting the price will fall. If it rises instead, your loss can keep growing.</p></div>
+      <div class="card"><span class="tag">Easy to manipulate</span><h4>Penny stocks</h4><p>Very cheap stocks, often traded "over the counter" with little public information. Thin trading makes them easy to push around.</p></div>
+      <div class="card"><span class="tag">Hype-driven</span><h4>Meme stocks</h4><p>Stocks that soar on social media buzz. GameStop rose more than tenfold in a few weeks in January 2021, then lost most of that gain within weeks. Many late buyers lost most of their money.</p></div>
+    </div>
+
+    <h3>Scam red flags</h3>
+    <p>Scammers target young investors on social media, Discord and group chats. Watch for:</p>
+    <ul>
+      <li>Guaranteed or "can't lose" returns, like "10% a week."</li>
+      <li>Pressure to act now: "only 3 spots left," "last chance."</li>
+      <li>A secret strategy, signals group or paid course that promises riches.</li>
+      <li>Anyone asking for your login or password, or asking you to send money to their account or crypto wallet.</li>
+      <li><dfn>Pump and dump</dfn>: a group hypes a tiny stock so its price jumps, then the organizers sell to the people they convinced, and the price collapses.</li>
+      <li>Screenshots of huge gains and flashy lifestyles, which are easy to fake.</li>
+      <li>Fake accounts pretending to be celebrities or real advisors.</li>
+    </ul>
+    <aside class="note note-tip">
+      <p class="note-label">Where to check</p>
+      <p>Real investing is mostly boring. Anyone promising fast, sure money is either wrong or lying. You can look up whether a financial professional is registered at FINRA BrokerCheck (brokercheck.finra.org), and learn more at Investor.gov, run by the SEC.</p>
+    </aside>
+
+    <h3>Crypto and apps that feel like games</h3>
+    <p>Crypto coins are not stocks. They don't own a business or earn profits, and their prices can swing wildly. Many scams aimed at teens involve crypto. If you get curious later, keep it to a small amount you could afford to lose completely.</p>
+    <p>Be just as careful with apps that make trading feel like a game, with confetti, streaks and push alerts. They're built to make you trade more, and trading more usually means worse results.</p>
+
+    <h3>Influencers</h3>
+    <p>Finance influencers can teach useful things. But many are paid to promote products, or earn money when you sign up through their link. Before you follow anyone's advice, ask two questions: How does this person make money? What happens to me if they're wrong?</p>
+  </div>
+  <div class="keyterms" data-lesson="9"></div>
+  <div class="quiz" data-quiz="m9"></div>
+  <div class="lesson-nav" data-nav="m9"></div>
+</section>
+
+<!-- ========== LESSON 10 ========== -->
+<section class="view" id="m10" hidden>
+  <div class="view-head">
+    <p class="kicker">Lesson 10 of 14 · 9 min</p>
+    <h2>Reading a price chart</h2>
+    <p class="goal">By the end, you can read a stock chart, spot the ways charts mislead, and tell useful information from noise.</p>
+  </div>
+  <div class="prose">
+    <p>A price chart shows price over time: time runs along the bottom and price runs up the side. Every broker app opens with one, so it's worth knowing what a chart can and can't tell you.</p>
+    <h3>Same stock, four stories</h3>
+    <p>Here is a made-up company's price history. Switch between timeframes and watch how different the same stock looks.</p>
+  </div>
+
+  <div class="px" id="px">
+    <div class="px-bar">
+      <div><p class="px-name">Northwind Bikes · NWB</p><p class="px-sub">Practice chart · made-up prices</p></div>
+      <div class="px-price"><span class="px-last num">$63.40</span><span class="px-chg num" id="px-chg"></span></div>
+    </div>
+    <div class="px-ctrl">
+      <div class="tabs" role="group" aria-label="Timeframe">
+        <button type="button" data-tf="1D" aria-pressed="false">1D</button>
+        <button type="button" data-tf="1M" aria-pressed="false">1M</button>
+        <button type="button" data-tf="1Y" aria-pressed="true">1Y</button>
+        <button type="button" data-tf="5Y" aria-pressed="false">5Y</button>
+      </div>
+      <label class="chk inline" for="px-ma"><input type="checkbox" id="px-ma"><span id="px-ma-label">Moving average</span></label>
+    </div>
+    <div class="legend" id="px-legend"></div>
+    <div class="chart-box" id="px-box">
+      <svg class="chart" id="px-svg" role="img" aria-label="Practice price chart for Northwind Bikes"></svg>
+      <div class="tip" id="px-tip" hidden></div>
+    </div>
+    <p class="px-note" id="px-note"></p>
+  </div>
+
+  <div class="prose">
+    <h3>Line charts and candlesticks</h3>
+    <p>A <dfn>line chart</dfn> connects the closing prices. A <dfn>candlestick</dfn> chart shows four prices for each period, such as each day: the open, the close, the high and the low.</p>
+  </div>
+  <figure class="diagram">
+    <svg viewBox="0 0 400 240" role="img" aria-label="Two candlesticks. The up candle's body runs from the open at the bottom to the close at the top. The down candle's body runs from the open at the top to the close at the bottom. Thin wicks reach the high and the low.">
+      <line class="cd-wick-up" x1="100" y1="30" x2="100" y2="190"/>
+      <rect class="cd-up" x="82" y="70" width="36" height="80" rx="2"/>
+      <line class="cd-lead" x1="58" y1="50" x2="96" y2="50"/>
+      <text class="cd-t" x="16" y="54">Wick</text>
+      <line class="cd-lead" x1="58" y1="110" x2="80" y2="110"/>
+      <text class="cd-t" x="16" y="114">Body</text>
+      <line class="cd-lead" x1="122" y1="30" x2="140" y2="30"/><text class="cd-t" x="146" y="34">High</text>
+      <line class="cd-lead" x1="122" y1="70" x2="140" y2="70"/><text class="cd-t" x="146" y="74">Close</text>
+      <line class="cd-lead" x1="122" y1="150" x2="140" y2="150"/><text class="cd-t" x="146" y="154">Open</text>
+      <line class="cd-lead" x1="122" y1="190" x2="140" y2="190"/><text class="cd-t" x="146" y="194">Low</text>
+      <line class="cd-wick-down" x1="300" y1="30" x2="300" y2="190"/>
+      <rect class="cd-down" x="282" y="70" width="36" height="80" rx="2"/>
+      <line class="cd-lead" x1="322" y1="30" x2="340" y2="30"/><text class="cd-t" x="346" y="34">High</text>
+      <line class="cd-lead" x1="322" y1="70" x2="340" y2="70"/><text class="cd-t" x="346" y="74">Open</text>
+      <line class="cd-lead" x1="322" y1="150" x2="340" y2="150"/><text class="cd-t" x="346" y="154">Close</text>
+      <line class="cd-lead" x1="322" y1="190" x2="340" y2="190"/><text class="cd-t" x="346" y="194">Low</text>
+      <text class="cd-cap" x="100" y="226" text-anchor="middle">Up: closed above open</text>
+      <text class="cd-cap" x="300" y="226" text-anchor="middle">Down: closed below open</text>
+    </svg>
+  </figure>
+  <div class="prose">
+    <ul>
+      <li>The thick <strong>body</strong> runs from the open to the close.</li>
+      <li>The thin lines, called <dfn>wicks</dfn>, reach the period's high and low.</li>
+      <li>Green means the price closed higher than it opened. Red means it closed lower.</li>
+    </ul>
+    <p>Many charts also show <strong>volume</strong> bars along the bottom. A very tall bar means unusually heavy trading, often because of news.</p>
+
+    <h3>Moving averages</h3>
+    <p>A <dfn>moving average</dfn> is the average closing price over a set number of recent days, recalculated every day. It smooths out the zigzags so you can see the trend. The 50-day and 200-day averages are the most common. Turn on "Moving average" in the chart above to see one. It describes the past. It doesn't predict anything.</p>
+
+    <h3>Five ways charts mislead</h3>
+    <ol>
+      <li><strong>Short timeframes exaggerate noise.</strong> A scary one-day drop can be a blip on a five-year chart.</li>
+      <li><strong>Squeezed price axes make small moves look huge.</strong> Compare the two charts below.</li>
+      <li><strong>Normal scales distort long periods.</strong> On a normal (linear) scale, a 10% move at $1,000 looks ten times taller than a 10% move at $100. A <dfn>log scale</dfn> draws equal percent moves at equal heights, so long histories look fair.</li>
+      <li><strong>Cherry-picked start dates.</strong> "Up 400%!" often means "measured from its lowest point ever."</li>
+      <li><strong>Price-only charts leave out dividends.</strong> A dividend stock's chart understates what its owners actually earned.</li>
+    </ol>
+  </div>
+  <div class="axis-demo" id="axis-demo"></div>
+  <div class="prose">
+    <h3>Patterns and predictions</h3>
+    <p>Social media is full of chart patterns with names like "head and shoulders," and lines called <dfn>support and resistance</dfn>. Reading charts to predict prices is technical analysis (Lesson 4). For long-term beginners there's little evidence it works, and it pushes you to trade more. A chart tells you what happened, not what happens next.</p>
+    <h3>What to actually look at</h3>
+    <ul class="checklist">
+      <li>The five-year or longest view, to see the long-term trend.</li>
+      <li>The biggest drop from a high in that period, called the <dfn>drawdown</dfn>. Could you have held on through it?</li>
+      <li>How it compares with the S&amp;P 500 over the same period. Many apps let you add a comparison line.</li>
+      <li>Whether a big jump or drop lines up with real news, like an earnings report.</li>
+    </ul>
+  </div>
+  <div class="keyterms" data-lesson="10"></div>
+  <div class="quiz" data-quiz="m10"></div>
+  <div class="lesson-nav" data-nav="m10"></div>
+</section>
+
+<!-- ========== LESSON 11 ========== -->
+<section class="view" id="m11" hidden>
+  <div class="view-head">
+    <p class="kicker">Lesson 11 of 14 · 10 min</p>
+    <h2>The economy and stocks</h2>
+    <p class="goal">By the end, you can explain how interest rates, inflation, jobs and recessions move stock prices, and translate a financial headline.</p>
+  </div>
+  <div class="prose">
+    <p>Over the long run, stock prices follow company profits, and profits depend on the economy. When people have jobs, they spend. When they spend, companies sell more. About two-thirds of the US economy is spending by ordinary people.</p>
+
+    <h3>The numbers investors watch</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Number</th><th>What it measures</th><th>Who reports it</th></tr></thead>
+        <tbody>
+          <tr><td><strong>GDP</strong></td><td>The total value of everything the economy produces. Growth means the economy is expanding.</td><td>Bureau of Economic Analysis, every quarter</td></tr>
+          <tr><td><strong>Unemployment rate</strong></td><td>The share of people looking for work who can't find a job.</td><td>Bureau of Labor Statistics, monthly jobs report</td></tr>
+          <tr><td><strong>CPI</strong></td><td>Inflation: how fast prices of everyday goods and services are rising.</td><td>Bureau of Labor Statistics, monthly</td></tr>
+          <tr><td><strong>Federal funds rate</strong></td><td>The interest rate banks charge each other overnight. It steers most other rates.</td><td>The Federal Reserve, at meetings about every six weeks</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>The Fed's job</h3>
+    <p>The <dfn>Federal Reserve</dfn>, or "the Fed," is the US central bank. Congress gave it two goals: as many jobs as possible, and stable prices. It aims for inflation of about 2% a year.</p>
+    <ul>
+      <li>When inflation runs too hot, the Fed <strong>raises</strong> interest rates. Borrowing gets more expensive, spending slows, and price increases cool down.</li>
+      <li>When the economy weakens, the Fed <strong>cuts</strong> rates to make borrowing cheaper and encourage spending.</li>
+    </ul>
+
+    <h3>Why interest rates move stocks</h3>
+    <ol>
+      <li><strong>Borrowing costs.</strong> Higher rates make loans pricier for companies and their customers, so both spend and expand less.</li>
+      <li><strong>Competition.</strong> When a savings account pays 5%, a risky stock looks less appealing than when savings pay 0.5%.</li>
+      <li><strong>Future profits are worth less today.</strong> Companies expected to earn most of their profits far in the future get hit hardest. In 2022, as the Fed raised rates quickly, the tech-heavy Nasdaq Composite fell about a third.</li>
+    </ol>
+    <aside class="note note-tip">
+      <p class="note-label">Rule of thumb</p>
+      <p>Rates up, stocks often down. Rates down, stocks often up. It's a tendency, not a law.</p>
+    </aside>
+
+    <h3>Recessions</h3>
+    <p>A <dfn>recession</dfn> is a broad decline in the economy that lasts months, with falling output and rising unemployment. People often say "two quarters in a row of shrinking GDP," but in the US a committee of economists at the National Bureau of Economic Research makes the official call. The US has had about a dozen recessions since World War II, including 2001, 2007–2009 and a short one in 2020.</p>
+    <p>Stocks often fall before and during a recession, and often start recovering before it officially ends. The market looks ahead, so prices can rise while the news is still bad.</p>
+
+    <h3>Different companies, different reactions</h3>
+    <div class="cards">
+      <div class="card"><h4>Defensive</h4><p>Utilities, groceries, healthcare, household goods. People buy these in any economy, so profits hold up better.</p></div>
+      <div class="card"><h4>Cyclical</h4><p>Airlines, cars, restaurants, luxury goods. Sales rise and fall with the economy.</p></div>
+      <div class="card"><h4>Rate-sensitive</h4><p>Banks, real estate, homebuilders. Their business depends on borrowing, so interest rates hit them directly.</p></div>
+    </div>
+
+    <h3>Decode the headline</h3>
+    <p>Financial news uses the same few ideas over and over. Tap each headline to translate it. These are practice headlines written in news style, not quotes from real articles.</p>
+  </div>
+  <div class="heads" id="heads"></div>
+  <div class="prose">
+    <h3>Should you trade on economic news?</h3>
+    <p>No. By the time a report reaches your phone, professional traders have already reacted, usually within seconds. Economists also disagree with each other, and recession predictions are often wrong. Use the news to understand why your account moved, not as a signal to buy or sell.</p>
+    <aside class="note note-tip">
+      <p class="note-label">What should change your plan</p>
+      <p>Your goals, your time horizon or your income. Not the news.</p>
+    </aside>
+  </div>
+  <div class="keyterms" data-lesson="11"></div>
+  <div class="quiz" data-quiz="m11"></div>
+  <div class="lesson-nav" data-nav="m11"></div>
+</section>
+
+<!-- ========== LESSON 12 ========== -->
+<section class="view" id="m12" hidden>
+  <div class="view-head">
+    <p class="kicker">Lesson 12 of 14 · 9 min</p>
+    <h2>Budgeting: finding money to invest</h2>
+    <p class="goal">By the end, you can read a paycheck, build a monthly budget, and decide how much to invest.</p>
+  </div>
+  <div class="prose">
+    <p>You can't invest money you've already spent. A <dfn>budget</dfn> is a plan that gives every dollar a job before the month starts, so you're not left wondering where it went.</p>
+
+    <h3>Read your paycheck</h3>
+    <p>Your first paycheck will be smaller than hours × wage. <dfn>Gross pay</dfn> is what you earned. <dfn>Net pay</dfn> is what lands in your account after deductions.</p>
+    <figure class="example">
+      <figcaption>Example · A first paycheck</figcaption>
+      <div class="ex-body">
+        <p>10 hours × $15 = <strong>$150 gross</strong>.</p>
+        <p><dfn>Payroll taxes</dfn> for Social Security and Medicare take 7.65%: $150 × 0.0765 = $11.48.</p>
+        <p>Net pay is about <strong>$138.52</strong>, before any income tax withholding. Many teens get withheld income tax back when they file a tax return.</p>
+      </div>
+    </figure>
+
+    <h3>Needs, wants and goals</h3>
+    <ul>
+      <li><strong>Needs</strong> are what you must pay for, like the phone bill you agreed to cover or gas to get to work.</li>
+      <li><strong>Wants</strong> are nice to have, like eating out, games and streaming.</li>
+      <li><strong>Goals</strong> are saving and investing for the future.</li>
+    </ul>
+    <p>Fixed expenses stay the same each month, like a phone plan. Variable expenses change, like food and gas. Variable expenses are where you have the most control.</p>
+
+    <h3>Pay yourself first</h3>
+    <p>On payday, move your savings and investing money first, ideally automatically. Then spend what's left. If you wait to invest whatever is left over, there usually isn't anything left.</p>
+    <p>Adults often use a 50/30/20 split: 50% needs, 30% wants, 20% saving. Teens living at home usually have fewer needs, so 50% spending, 40% saving and investing and 10% giving is a common place to start. These are starting points, not rules.</p>
+
+    <h3>Build your budget</h3>
+    <p>The example below is filled in for a $400-a-month weekend job. Change any number to match your life. It's saved in this browser.</p>
+  </div>
+  <div class="budget" id="budget"></div>
+  <div class="prose">
+    <h3>Your emergency fund</h3>
+    <p>An <dfn>emergency fund</dfn> is cash for surprises, kept in a savings account. Adults aim for 3 to 6 months of expenses. For a teen, a few hundred dollars, or about one month of spending, is a good first target. It protects your investments: a broken phone never forces you to sell stocks during a crash.</p>
+
+    <h3>Debt comes first</h3>
+    <p>Credit card interest rates are often 20% a year or more. Stocks have averaged about 10%. If you carry a card balance, paying it off is like earning a guaranteed 20%. The yearly cost of borrowing is shown as an <dfn>APR</dfn>. "Buy now, pay later" plans are borrowing too, even when they feel like a payment plan.</p>
+
+    <h3>Small leaks</h3>
+    <p>A $12 monthly subscription costs $144 a year. Invested at 7% a year from age 16 to 65 instead, $12 a month could grow to about $60,800. That's no reason to never have fun. It's a reason to choose on purpose.</p>
+    <p>Check your budget once a month. Compare what you planned with what you actually spent, and adjust.</p>
+  </div>
+  <div class="keyterms" data-lesson="12"></div>
+  <div class="quiz" data-quiz="m12"></div>
+  <div class="lesson-nav" data-nav="m12"></div>
+</section>
+
+<!-- ========== LESSON 13 ========== -->
+<section class="view" id="m13" hidden>
+  <div class="view-head">
+    <p class="kicker">Lesson 13 of 14 · 10 min</p>
+    <h2>Beyond stocks</h2>
+    <p class="goal">By the end, you know how bonds, cash, real estate, gold and crypto work, and how investors mix them.</p>
+  </div>
+  <div class="prose">
+    <p>Stocks are one <dfn>asset class</dfn>: a group of investments that behave in similar ways. Here are the main ones.</p>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Asset</th><th>What you own</th><th>How it makes money</th><th>Risk</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Cash</strong></td><td>Savings, CDs, money market funds</td><td>Interest</td><td>Very low</td></tr>
+          <tr><td><strong>Bonds</strong></td><td>A loan to a government or company</td><td>Interest, plus your money back at the end</td><td>Low to medium</td></tr>
+          <tr><td><strong>Stocks</strong></td><td>Part of a company</td><td>Profits, through price growth and dividends</td><td>High</td></tr>
+          <tr><td><strong>Real estate</strong></td><td>Shares of companies that own property</td><td>Rent, paid out as dividends</td><td>Medium to high</td></tr>
+          <tr><td><strong>Gold</strong></td><td>A physical metal</td><td>Only if someone pays more later</td><td>High, no income</td></tr>
+          <tr><td><strong>Crypto</strong></td><td>A digital token</td><td>Only if someone pays more later</td><td>Very high, no income</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Bonds, up close</h3>
+    <p>A bond is a loan with three parts: the face value (what you get back), the <dfn>coupon</dfn> (the yearly interest rate) and the <dfn>maturity</dfn> (when the loan ends).</p>
+    <figure class="example">
+      <figcaption>Example · A 10-year bond</figcaption>
+      <div class="ex-body">
+        <p>You buy a $1,000 bond with a 4% coupon and a 10-year maturity. You get $40 a year for 10 years, $400 in total, plus your $1,000 back at the end.</p>
+      </div>
+    </figure>
+    <ul>
+      <li><dfn>Treasury</dfn> bonds are loans to the US government. They're considered among the safest investments in the world.</li>
+      <li>Corporate bonds are loans to companies. They pay more because the company could fail. Bonds from shaky companies are called high-yield or "junk" bonds.</li>
+    </ul>
+    <aside class="note note-warn">
+      <p class="note-label">Watch out</p>
+      <p>Bond prices move opposite to interest rates. If new bonds pay 5%, nobody will pay full price for your 4% bond, so its price falls. In 2022, when rates rose fast, the broad US bond market lost about 13%, its worst year on record.</p>
+    </aside>
+
+    <h3>Cash that earns something</h3>
+    <ul>
+      <li><strong>High-yield savings account:</strong> FDIC-insured, and you can withdraw any time.</li>
+      <li><dfn>CD</dfn> (certificate of deposit): you lock money up for a set time, like one year, at a fixed rate. Taking it out early costs a penalty.</li>
+      <li><dfn>Money market fund</dfn>: a fund that holds very short-term loans. Very low risk, but not FDIC-insured.</li>
+    </ul>
+
+    <h3>Real estate, gold and crypto</h3>
+    <p>A <dfn>REIT</dfn> (real estate investment trust) owns income-producing property, like apartments, warehouses or cell towers, and must pay out most of its taxable income as dividends. You can buy REITs through a fund, and a total stock market fund already includes some.</p>
+    <p>Gold and other <dfn>commodities</dfn> don't produce profits or pay anything. Their price depends on what the next buyer will pay. Gold sometimes holds up in a crisis, but over long periods it has grown much less than stocks.</p>
+    <p><dfn>Cryptocurrency</dfn> like Bitcoin also produces no profits or income. Bitcoin has fallen more than 70% from a peak several times. US bitcoin ETFs started trading in 2024, which made it easier to buy, not less risky. If you ever own any, keep it to a small amount you could lose completely.</p>
+
+    <h3>Asset allocation: your mix</h3>
+    <p>Your <dfn>asset allocation</dfn> is how you split your money between asset classes. It's the biggest single decision for how bumpy your ride will be. Pick a mix to compare.</p>
+  </div>
+  <div class="alloc" id="alloc"></div>
+  <div class="prose">
+    <p>More stocks means more growth on average, and deeper worst years. With 40+ years ahead and income from work, most young investors hold mostly or all stocks. People close to retirement add bonds because they can't wait years for a recovery. Target-date funds (Lesson 5) shift the mix for you automatically.</p>
+    <h3>Rebalancing</h3>
+    <p>Over time your mix drifts. If you want 80% stocks and a great year pushes you to 90%, <dfn>rebalancing</dfn> means moving back to 80%, either by selling some stocks and buying bonds or by sending new money to bonds. Once a year is plenty.</p>
+  </div>
+  <div class="keyterms" data-lesson="13"></div>
+  <div class="quiz" data-quiz="m13"></div>
+  <div class="lesson-nav" data-nav="m13"></div>
+</section>
+
+<!-- ========== LESSON 14 ========== -->
+<section class="view" id="m14" hidden>
+  <div class="view-head">
+    <p class="kicker">Lesson 14 of 14 · 10 min</p>
+    <h2>Famous mistakes</h2>
+    <p class="goal">By the end, you can name the few mistakes behind most investing disasters, and how to avoid each one.</p>
+  </div>
+  <div class="prose">
+    <p>Most investing disasters come from the same few mistakes: overpaying for a story, putting too much in one place, borrowing, panicking, and trusting the wrong people. Here they are in real life, in order.</p>
+  </div>
+  <ol class="stories">
+    <li class="story">
+      <p class="story-yr">1995–2002</p>
+      <div class="story-body">
+        <h3>The dot-com bubble</h3>
+        <p><span class="lbl">What happened</span>Investors poured money into new internet companies, many with little revenue and no profit, because "the internet changes everything." The Nasdaq Composite peaked in March 2000, then fell about 78% by October 2002. Pets.com went from its stock market debut to shutting down in about nine months. Even Amazon, a huge long-term winner, fell more than 90%.</p>
+        <p><span class="lbl">The mistake</span>Paying any price for a great story. The internet really did change everything, but most of those stocks were priced as if every company would win. This kind of hype-driven price surge is called a <dfn>bubble</dfn>.</p>
+        <p><span class="lbl">The lesson</span>A world-changing idea doesn't make every stock a good buy. Price matters: the Nasdaq took about 15 years to get back to its 2000 peak. <a href="#m4">Lesson 4</a></p>
+      </div>
+    </li>
+    <li class="story">
+      <p class="story-yr">1998</p>
+      <div class="story-body">
+        <h3>Long-Term Capital Management</h3>
+        <p><span class="lbl">What happened</span>A <dfn>hedge fund</dfn> run by star Wall Street traders, with two Nobel Prize-winning economists as partners, borrowed huge amounts to magnify small bets its models called safe. When Russia defaulted on its debt in 1998, markets moved in ways the models said were nearly impossible. The fund lost about $4.6 billion in a few months, and the Federal Reserve Bank of New York organized a rescue by major banks.</p>
+        <p><span class="lbl">The mistake</span><dfn>Leverage</dfn> plus overconfidence.</p>
+        <p><span class="lbl">The lesson</span>Borrowing turns ordinary losses into catastrophic ones, no matter how smart you are. <a href="#m9">Lesson 9</a></p>
+      </div>
+    </li>
+    <li class="story">
+      <p class="story-yr">2001</p>
+      <div class="story-body">
+        <h3>Enron</h3>
+        <p><span class="lbl">What happened</span>Enron was one of America's biggest companies and a Wall Street favorite. It used accounting tricks to hide debt and make profits look bigger. When the truth came out, the stock fell from about $90 to under $1 in a little over a year, and the company went bankrupt in December 2001. Many employees had most of their retirement savings in Enron stock, so they lost their jobs and their savings at the same time.</p>
+        <p><span class="lbl">The mistake</span>Concentration, especially in your own employer.</p>
+        <p><span class="lbl">The lesson</span>Diversify. Never let one company, even a famous one, hold most of your money. <a href="#m6">Lesson 6</a></p>
+      </div>
+    </li>
+    <li class="story">
+      <p class="story-yr">2007–2009</p>
+      <div class="story-body">
+        <h3>The financial crisis</h3>
+        <p><span class="lbl">What happened</span>Banks and homebuyers borrowed heavily, believing home prices couldn't fall across the whole country. When they did, loans went bad. Lehman Brothers went bankrupt in September 2008, and the S&amp;P 500 fell about 57% from its peak. Many investors sold near the bottom in early 2009 and missed one of the strongest recoveries in history.</p>
+        <p><span class="lbl">The mistake</span>Too much debt, then panic selling.</p>
+        <p><span class="lbl">The lesson</span>Leverage magnifies losses, and selling in a panic turns a temporary drop into a permanent loss. <a href="#m6">Lesson 6</a></p>
+      </div>
+    </li>
+    <li class="story">
+      <p class="story-yr">2008</p>
+      <div class="story-body">
+        <h3>Bernie Madoff</h3>
+        <p><span class="lbl">What happened</span>Madoff, a former chairman of the Nasdaq stock market, ran the largest <dfn>Ponzi scheme</dfn> in history: he paid "returns" to old clients with new clients' money. His statements showed smooth gains of about 1% a month, year after year, even in bad markets. When the 2008 crash brought a wave of withdrawals, it collapsed. The fake account statements added up to about $65 billion.</p>
+        <p><span class="lbl">The mistake</span>Trusting returns that were too smooth, and a famous name.</p>
+        <p><span class="lbl">The lesson</span>Real investments go up and down. Steady, too-good returns are a red flag. Check registration and who actually holds your money. <a href="#m9">Lesson 9</a></p>
+      </div>
+    </li>
+    <li class="story">
+      <p class="story-yr">2021</p>
+      <div class="story-body">
+        <h3>GameStop</h3>
+        <p><span class="lbl">What happened</span>Traders on Reddit piled into GameStop, a struggling video game retailer that big hedge funds had bet against through short selling. The price rose more than tenfold in a few weeks. One hedge fund that had shorted it lost billions and later shut down. Then the price fell most of the way back within weeks, and many people who bought near the top lost most of their money.</p>
+        <p><span class="lbl">The mistake</span>Both sides. The short sellers took on unlimited risk, and late buyers chased FOMO.</p>
+        <p><span class="lbl">The lesson</span>Hype cuts both ways. When everyone is talking about a stock, the easy money has usually already been made. <a href="#m9">Lesson 9</a></p>
+      </div>
+    </li>
+    <li class="story">
+      <p class="story-yr">2022</p>
+      <div class="story-body">
+        <h3>FTX</h3>
+        <p><span class="lbl">What happened</span>FTX was one of the world's biggest crypto exchanges, promoted by celebrities and athletes and even named on a sports arena. In November 2022 it collapsed within days when it came out that customer deposits had been secretly used for risky bets. Its founder was convicted of fraud in 2023 and sentenced to 25 years in prison.</p>
+        <p><span class="lbl">The mistake</span>Trusting celebrity endorsements, and keeping money somewhere you couldn't check how it was held.</p>
+        <p><span class="lbl">The lesson</span>Fame isn't proof. Use regulated, well-known brokers, and look up anyone selling you an investment. <a href="#m9">Lesson 9</a></p>
+      </div>
+    </li>
+  </ol>
+  <div class="prose">
+    <h3>Five mistakes behind most disasters</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Mistake</th><th>Seen in</th><th>Your protection</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Overpaying for a story</strong></td><td>Dot-com, GameStop</td><td>Check the price against profits (Lesson 4)</td></tr>
+          <tr><td><strong>Concentration</strong></td><td>Enron, GameStop</td><td>A broad index fund as your core (Lesson 5)</td></tr>
+          <tr><td><strong>Leverage</strong></td><td>LTCM, 2008</td><td>No margin and no leveraged ETFs (Lesson 9)</td></tr>
+          <tr><td><strong>Panic</strong></td><td>2008, every crash</td><td>A written rule to stay invested (Lesson 6)</td></tr>
+          <tr><td><strong>Trusting the wrong people</strong></td><td>Madoff, FTX</td><td>The red-flag list and BrokerCheck (Lesson 9)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Want to test yourself against these mistakes? Try the <a href="#game">ten-year test</a>.</p>
+  </div>
+  <div class="keyterms" data-lesson="14"></div>
+  <div class="quiz" data-quiz="m14"></div>
+  <div class="lesson-nav" data-nav="m14"></div>
+</section>
+
+<!-- ========== GAME ========== -->
+<section class="view" id="game" hidden>
+  <div class="view-head">
+    <p class="kicker">Practice · Decision game</p>
+    <h2>The ten-year test</h2>
+    <p class="goal">You're 16, with $500 invested and $50 a month going in automatically. Ten years, ten decisions. At the end, see how your choices compare with sticking to the plan.</p>
+  </div>
+  <div class="game" id="game-root"></div>
+</section>
+
+<!-- ========== MATH GYM ========== -->
+<section class="view" id="gym" hidden>
+  <div class="view-head">
+    <p class="kicker">Practice · Unlimited problems</p>
+    <h2>Math gym</h2>
+    <p class="goal">Fresh numbers every time, with a worked solution after each answer. A calculator is allowed. Investors use one too.</p>
+  </div>
+  <div class="gym-bar">
+    <div class="field"><label for="gym-topic">Topic</label><select id="gym-topic"></select></div>
+    <div class="gym-stats" aria-live="polite"><span>Correct <b id="gym-ok">0</b> of <b id="gym-total">0</b></span><span>Streak <b id="gym-streak">0</b></span></div>
+  </div>
+  <div class="sheet">
+    <div class="sheet-head"><span id="gym-label">Problem</span><span id="gym-lesson"></span></div>
+    <div class="sheet-body">
+      <p class="gym-q" id="gym-q"></p>
+      <p class="gym-round" id="gym-round"></p>
+      <form class="gym-form" id="gym-form" autocomplete="off">
+        <div class="ans"><span id="gym-pre"></span><input id="gym-answer" type="text" inputmode="decimal" aria-label="Your answer"><span id="gym-suf"></span></div>
+        <button class="btn btn-primary" type="submit">Check</button>
+      </form>
+      <div class="gym-fb" id="gym-fb" aria-live="polite"></div>
+      <div class="gym-next"><button class="btn" type="button" id="gym-new">New problem</button></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FINAL EXAM ========== -->
+<section class="view" id="exam" hidden>
+  <div class="view-head">
+    <p class="kicker">Practice · 20 questions</p>
+    <h2>Final exam</h2>
+    <p class="goal">Real-world scenarios that mix every lesson. Answer all 20, then grade it. You'll see an explanation for each one.</p>
+  </div>
+  <div class="quiz" data-quiz="exam" style="margin-top:0"></div>
+</section>
+
+<!-- ========== GLOSSARY ========== -->
+<section class="view" id="glossary" hidden>
+  <div class="view-head">
+    <p class="kicker" id="g-count">Reference</p>
+    <h2>Glossary</h2>
+    <p class="goal">Every term from the course, in plain English, with a link to the lesson that teaches it.</p>
+  </div>
+  <div class="search field"><label for="gloss-q">Search terms</label><input id="gloss-q" type="search" placeholder="Try P/E, dividend or margin"></div>
+  <div id="gloss-list"></div>
+</section>
+
+<!-- ========== MY PLAN ========== -->
+<section class="view" id="plan" hidden>
+  <div class="view-head">
+    <p class="kicker">Practice · Put it together</p>
+    <h2>My investing plan</h2>
+    <p class="goal">Fill this in, then print or copy it and talk it through with a parent or guardian before opening an account. It's saved in this browser.</p>
+  </div>
+  <div class="plan">
+    <form class="plan-form" id="plan-form" autocomplete="off">
+      <div class="row2">
+        <div class="field"><label for="p-age">My age</label><input type="number" id="p-age" min="10" max="25" value="16"></div>
+        <div class="field"><label for="p-goal">My goal</label><input type="text" id="p-goal" value="Build long-term wealth"></div>
+      </div>
+      <div class="row2">
+        <div class="field"><label for="p-start">Starting amount</label><div class="money"><input type="number" id="p-start" min="0" step="10" value="100"></div></div>
+        <div class="field"><label for="p-monthly">Each month</label><div class="money"><input type="number" id="p-monthly" min="0" step="5" value="25"></div></div>
+      </div>
+      <div class="field"><label for="p-account">Account</label>
+        <select id="p-account">
+          <option>Custodial brokerage account (UTMA/UGMA)</option>
+          <option>Youth or teen brokerage account</option>
+          <option>Custodial Roth IRA</option>
+          <option>Not sure yet, will decide with a parent</option>
+        </select>
+        <p class="hint" id="p-account-hint"></p>
+      </div>
+      <div class="field"><label for="p-core">Core holding</label><input type="text" id="p-core" value="A broad, low-fee index fund (total US market or S&amp;P 500)"></div>
+      <div class="field"><label for="p-slice">Learning slice for individual stocks <span class="val" id="p-slice-v">10%</span></label><input type="range" id="p-slice" min="0" max="20" step="5" value="10"></div>
+      <div class="field"><label for="p-check">I'll check my account</label>
+        <select id="p-check"><option>once a month</option><option>once a quarter</option><option>once a week</option></select>
+      </div>
+      <fieldset>
+        <legend>My rules</legend>
+        <label class="chk"><input type="checkbox" id="r1" checked><span>I won't sell just because the price dropped.</span></label>
+        <label class="chk"><input type="checkbox" id="r2" checked><span>No margin, options or day trading.</span></label>
+        <label class="chk"><input type="checkbox" id="r3" checked><span>I'll run the six-question checklist before buying any company.</span></label>
+        <label class="chk"><input type="checkbox" id="r4" checked><span>Money I need within 5 years stays in savings.</span></label>
+        <label class="chk"><input type="checkbox" id="r5" checked><span>I'll ignore anyone promising guaranteed returns.</span></label>
+        <label class="chk"><input type="checkbox" id="r6" checked><span>I'll reinvest dividends.</span></label>
+      </fieldset>
+    </form>
+    <div class="plan-card">
+      <div class="pc-h"><span>Plan summary</span><div class="pc-actions"><button class="btn" type="button" id="p-print">Print</button><button class="btn" type="button" id="p-copy">Copy plan</button></div></div>
+      <div class="plan-out" id="plan-out"></div>
+      <div class="plan-proj" id="plan-proj"></div>
+      <p class="copy-status" id="p-copy-status" aria-live="polite"></p>
+    </div>
+  </div>
+</section>
+
+  </main>
+</div>
+
+<footer>
+  <div class="wrap">
+    <section class="backup" aria-labelledby="bk-h">
+      <h2 class="backup-h" id="bk-h">Your progress</h2>
+      <p>Your quiz results, game score, budget and plan are saved in this browser only. Export a backup to keep them safe or move them to another browser or computer.</p>
+      <div class="backup-actions">
+        <button class="btn" type="button" id="bk-export">Export progress</button>
+        <button class="btn" type="button" id="bk-import">Import progress</button>
+        <input type="file" id="bk-file" accept=".json,application/json" hidden>
+        <button class="btn" type="button" id="bk-reset">Reset progress</button>
+      </div>
+      <div class="backup-confirm" id="bk-confirm" hidden>
+        <p>This clears your quiz results, game score, budget and plan in this browser. You can only get them back from an exported backup.</p>
+        <div class="backup-actions">
+          <button class="btn btn-danger" type="button" id="bk-reset-yes">Yes, reset everything</button>
+          <button class="btn" type="button" id="bk-reset-no">Cancel</button>
+        </div>
+      </div>
+      <p class="backup-status" id="bk-status" aria-live="polite"></p>
+    </section>
+    <p>First Shares is for learning only and isn't financial advice. Companies in examples are made up unless named. Historical figures are approximate, and past returns don't guarantee future results.</p>
+    <p>Account and tax rules described are for the US and change over time. Talk with a parent or guardian before opening any account or investing real money.</p>
+  </div>
+</footer>
+
+<script src="assets/js/core.js"></script>
+<script src="assets/js/data/glossary.js"></script>
+<script src="assets/js/data/quizzes.js"></script>
+<script src="assets/js/charts.js"></script>
+<script src="assets/js/quiz.js"></script>
+<script src="assets/js/widgets.js"></script>
+<script src="assets/js/gym.js"></script>
+<script src="assets/js/plan.js"></script>
+<script src="assets/js/game.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
